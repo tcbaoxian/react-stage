@@ -1,4 +1,4 @@
-import { INCREMENT_COUNTER, DECREMENT_COUNTER } from '../actions/Counter/Counter.js'
+import { INCREMENT_COUNTER, DECREMENT_COUNTER } from '../../actions/Counter/Counter.js'
 import SImmutable from 'seamless-immutable';
 
 const initialState = SImmutable({

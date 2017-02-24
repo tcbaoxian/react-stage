@@ -17,6 +17,8 @@ class Header extends Component{
         <Link to="/">Home</Link>
         {' '}
         <Link to="counter">Counter</Link>
+        {' '}
+        <Link to="valuater">Valuater</Link>
       </div>
       )
 

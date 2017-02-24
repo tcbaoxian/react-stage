@@ -15,6 +15,9 @@ app.use('/public',express.static('public'));
 app.get('/',function(req,res){
     res.sendFile(path.join(__dirname, './view/index.html'));
 });
+app.get('/valuater',function(req,res){
+    res.sendFile(path.join(__dirname, './view/index.html'));
+});
 
 
 app.listen(app.get('port'), function() {
