@@ -16,7 +16,25 @@ node app
 ```
 我们的环境就正式搭建完成了，所需要的就是在浏览器上打开localhost:3000的网页。
 
-
+# 简单的git教程
+首先将项目拷到本地
+```
+git clone https://github.com/tcbaoxian/react-stage.git
+```
+然后切到文件夹中
+```
+cd react-stage
+```
+一般开发都在develop分支开发，master是线上的分支，所以我们需要切换到develop分支：
+```
+git checkout -b develop origin/develop
+```
+当开发完成后我们需要将代码上传：
+```
+git add .
+git commit -m 'descriptions'
+git push
+```
 
 
 
