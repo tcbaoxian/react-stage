@@ -2,7 +2,7 @@
 import React, { Component } from 'react'
 import { Route, IndexRoute } from 'react-router'
 import App from '../containers/App.js'
-import HomeView from '../components/Home/HomeView.js'
+import HomeView from '../components/Home/HomeContainer.js'
 import Counter from '../components/Counter/CounterContainer.js'
 import Valuater from '../components/Valuater/ValuaterContainer.js'
 
