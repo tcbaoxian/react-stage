@@ -45,8 +45,3 @@ git add .
 git commit -m 'descriptions'
 git push
 ```
-
-
-
-
-
