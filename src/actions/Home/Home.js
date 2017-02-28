@@ -3,14 +3,18 @@ export const DELETE_ITEM = 'DELETE_ITEM'
 
 
 export function addItem(item){
-  return {
-    type: ADD_ITEM,
-    param: item
+  return (dispatch) => {
+    dispatch({
+      type: ADD_ITEM,
+      param: item
+    })
   }
 }
 export function deleteItem(index){
-  return {
-    type: DELETE_ITEM,
-    param: index,
+  return (dispatch) => {
+    dispatch({
+      type: DELETE_ITEM,
+      param: index,
+    })
   }
 }

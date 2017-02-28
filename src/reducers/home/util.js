@@ -1,5 +1,6 @@
 import _ from 'lodash';
 
+
 export function addItem(state, action){
   console.log(action.param);
   const newNotes = _.assign([], state.notes);
@@ -7,6 +8,9 @@ export function addItem(state, action){
 
   return state.setIn(['notes'], newNotes);
 }
+
+
+
 
 export function deleteItem(state, action){
   const newNotes = _.assign([], state.notes);
