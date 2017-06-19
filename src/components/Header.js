@@ -8,17 +8,15 @@ import { Link } from 'react-router'
 //     <Link to="counter">Counter</Link>
 //   </div>
 
-
-
 class Header extends Component{
   render(){
     return(
       <div>
-        <Link to="/">Home</Link>
+        <Link to="/baoxian/">Home</Link>
         {' '}
-        <Link to="counter">Counter</Link>
+        <Link to="/baoxian/counter">Counter</Link>
         {' '}
-        <Link to="valuater">Valuater</Link>
+        <Link to="/baoxian/valuater">Valuater</Link>
       </div>
       )
 

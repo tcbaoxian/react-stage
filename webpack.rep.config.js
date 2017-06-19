@@ -15,6 +15,8 @@ module.exports = {
   output: {
     path: __dirname + '/build/', // /build_artifacts/build/dzs-mhotel/front-hotel-h5app/1.0.0.1/
     filename: './[name].1.8.10.js', //[chunkhash:6] --> 换成版本1.0前面代表重大更改，后面代表bug修复，需求增加
+    chunkFilename: '[name].chunk.js',
+    publicPath: 'http://file.40017.cn/baoxian/js/baoxian-wx/'
   },
   module: {
     loaders: [

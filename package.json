@@ -5,7 +5,7 @@
   "main": "src/main.jsx",
   "scripts": {
     "build": "webpack --config webpack.rep.config.js --progress --colors",
-    "start": "webpack-dev-server --devtool source-map --hot --inline --progress --colors --content-base . --history-api-fallback ",
+    "start": "webpack-dev-server --devtool source-map --hot --inline --progress --colors --content-base . --history-api-fallback --host 0.0.0.0",
     "lint": "eslint 'src/**/*.@(js|jsx)'",
     "test": "echo \"Error: no test specified\" && exit 0",
     "validate": "npm ls"
@@ -31,11 +31,13 @@
     "path": "^0.12.7",
     "react": "^15.0.2",
     "react-dom": "^15.0.2",
+    "react-mobile-datepicker": "^3.0.4",
     "react-redux": "^4.4.5",
     "react-router": "^2.4.0",
     "redux": "^3.5.2",
     "redux-thunk": "^2.0.1",
-    "seamless-immutable": "^7.0.1"
+    "seamless-immutable": "^7.0.1",
+    "whatwg-fetch": "^2.0.3"
   },
   "devDependencies": {
     "babel-core": "^6.8.0",

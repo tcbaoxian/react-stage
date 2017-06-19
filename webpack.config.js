@@ -43,7 +43,7 @@ module.exports = {
           NODE_ENV: JSON.stringify('development'),
       },
     }),
-    new OpenBrowserPlugin({ url: 'http://localhost:8080' }),
+    new OpenBrowserPlugin({ url: 'http://localhost:8080/baoxian' }),
     new ExtractTextPlugin("styles/styles.css",{
       allChunks: true
     }),

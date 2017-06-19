@@ -4,13 +4,20 @@ import { Route, IndexRoute } from 'react-router'
 import App from '../containers/App.js'
 import HomeView from '../components/Home/HomeContainer.js'
 import Counter from '../components/Counter/CounterContainer.js'
-import Valuater from '../components/Valuater/ValuaterContainer.js'
+
 
 const routes = (
-    <Route path="/" component={App}>
+    <Route path="/baoxian" component={App}>
       <IndexRoute component={HomeView} />
-      <Route path="/counter" component={Counter} />
+      <Route path="/baoxian/counter" component={Counter} />
+      <Route path="/baoxian/valuater" getComponent={(location, cb)=>{
+                                              require.ensure([],require =>{
+                                                cb(null,require('../components/Valuater/ValuaterContainer').default)
+                                              }, 'Valuater')
+                                            }} />
+      {/*
       <Route path="/valuater" component={Valuater} />
+      */}                                            
     </Route>
 )
 

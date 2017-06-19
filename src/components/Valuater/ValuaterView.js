@@ -5,8 +5,7 @@ import _ from 'lodash';
 class Valuater extends Component {
   componentWillMount(){
     const { fetchFactorys,valuater } = this.props;
-    fetchFactorys();
-    
+    console.log('Valuater componentWillMount')
   }
 
   factoryClick = (index, item) => {
@@ -33,7 +32,6 @@ class Valuater extends Component {
     return (
     <div>
       计价因子
-      {this.renderFactoryList()}
     </div>
       )
   }
